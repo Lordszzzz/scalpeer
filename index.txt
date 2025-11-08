@@ -1,0 +1,253 @@
+/* Em Promoção - Resumo */
+.holder-cols-checkout .holder-container-resume .item-holder-quantity-price::after {
+content: "Em promoção";
+font-size: 11px;
+padding: 3px 5px;
+color: #fff;
+font-weight: 600;
+background: #0086ff;
+border-radius: 5px;
+display: inline-block;
+align-self: end;
+}
+
+header {
+background:#ffffff !important;
+position: fixed;
+top: 0;
+width: 100%;
+z-index: 1000;
+}
+.box-checkout box-customer{
+  background:#000000;
+  margin:20px;
+}
+  
+:root {
+--main-color: #008ed2;
+--sec-color: #00a801;
+--payment-color: #00b69d;
+}
+/* Foco no Cartão - APROVAÇÃO IMEDIATA */
+.payments .payment.pix,
+.payments .payment.credit-card {
+border-color: var(--payment-color);
+}
+.payments .payment > label {
+position: relative;
+display: flex;
+}
+.payments .payment > label[for="payment-billet"]:after {
+background: #a2a2a2;
+display: block;
+line-height: inherit;
+color: #FFF;
+padding: 4px 5px;
+border-radius: 3px;
+position: absolute;
+font-weight: bold;
+font-size: 10px;
+right: 10px;
+letter-spacing: 0.03em;
+top: 26%;
+content: 'APROVAÇÃO EM 3 DIAS';
+}
+.payments .payment > label[for="payment-pix"]:after,
+.payments .payment > label[for="payment-credit-card"]:after
+{
+background: var(--payment-color);
+display: block;
+line-height: inherit;
+color: #FFF;
+padding: 4px 5px;
+border-radius: 3px;
+position: absolute;
+font-weight: bold;
+font-size: 10px;
+right: 10px;
+letter-spacing: 0.03em;
+top: 26%;
+content: 'APROVAÇÃO IMEDIATA';
+}
+.payments .payment > label[for="payment-credit-card"]:after {
+top: 13%;
+}
+/* Cor do botão de Add Desconto */
+.btn-text.btn-purple {
+color: #333;
+}
+/* Mudança de Fonte */
+.mt10 {
+margin-top: 6px;
+margin-right: 16px;
+}
+.f-h2 {
+font-family: 'Oswald', sans-serif;
+font-size: 22px!important;
+font-weight: 400;
+}
+
+.holder-cols-checkout .box-checkout .box-title .desc {
+font-family: 'Roboto', sans-serif;
+line-height: 1.4;
+font-size: 13.5px;
+}
+/* Emissão Nota Fiscal */
+label[for=cpf]::after {
+content: ' (Emissão Nota Fiscal)';
+}
+/* Cor da HeadLine */
+.holder-cols-checkout .box-checkout.active .title {
+color: #000000!important;
+content:'hello'!important;
+background:'#454545'!important;
+}
+/* Cor das bolinhas (3 passos) mobile */
+.holder-cols-checkout .box-checkout.active .box-title .holder-number {
+background: var(--main-color);
+border-color: var(--main-color)!important;
+color: #fff;
+}
+.checkout-step.enabled .connect, .checkout-step.enabled .holder-icon {
+background: var(--main-color);
+}
+a {
+text-decoration: none;
+color: var(--main-color);
+}
+/* Cor das Bolinhas depois de preenchidas (PC) */
+.holder-cols-checkout .box-checkout:not(.active):not(.disabled):not(.box-resume):not(.box-payment) .holder-number {
+background-color: var(--sec-color);
+}
+/* Cor das HeadLines depois de preenchidas (PC) */
+.holder-cols-checkout .box-checkout:not(.active):not(.disabled):not(.box-resume):not(.box-payment) .title {
+color: var(--sec-color)!important;
+background:#000000
+}
+/* Cor do verificado das HeadLines depois de preenchidas (PC) */
+.green {
+color: var(--sec-color)!important;
+}
+/* Cor da borda do campo selecionado (PC) */
+.holder-cols-checkout .box-checkout.active {
+border-color: var(--main-color);
+}
+/* Cor dos Verificados de campo preenchido */
+.form-horizontal .holder-input.valid:after {
+position: absolute;
+top: 14px;
+right: 15px;
+font-family: FontAwesome;
+color: var(--sec-color);
+content: "\f00c";
+}
+.box-checkout{
+  margin-top:80px;
+}
+/* Cor dos Preços */
+.holder-cols-checkout .cart-resume .detail.total {
+color: var(--sec-color);
+padding-top: 12px;
+padding-bottom: 6px;
+}
+.holder-cols-checkout .box-checkout.box-resume .cart_total {
+color: var(--sec-color);
+}
+/* Cor do Grátis da parte de frete */
+.c-green-2 {
+color: var(--sec-color)!important;
+}
+/* Cor do OrderBump */
+.holder-recomm {
+border: 2px dashed var(--main-color);
+}
+.orderbump {
+background-color: #FFF;
+}
+.owl-orderbumps .owl-dots .owl-dot.active span {
+background-color: var(--main-color) !important;
+}
+.orderbumps_offer-title, .orderbumps_offer-total {
+color: var(--main-color) !important;
+background-color: #FFF;
+}
+.orderbump_price {
+color: var(--main-color) !important;
+}
+.orderbump_button {
+background-color: var(--main-color) !important;
+}
+.holder-countdown {
+padding: 9px 0 !important;
+}
+/* Ícone do Mercado Pago atualizado */
+.icon-mercadopago {
+background-image: url(https://http2.mlstatic.com/frontend-assets/ui-navigation/5.14.4/mercadopago/logo__large.png);
+}
+/* Mudança na Precificação */
+.holder-cols-checkout .cart-resume {
+padding: 10px 20px;
+font-weight: 500;
+border-radius: 4px;
+border-top: 1px solid #EEE;
+}
+/* 12x no Cartão */
+.holder-cols-checkout .cart-resume .detail.total .value:after {
+content: 'em até 12x no cartão';
+color: #4b4b4b !important;
+display: block;
+font-weight: bold;
+font-size: 12px;
+}
+
+/* Adicionar Icone dos Correios */
+.option.clearfix {
+background-image: url(https://www.propeg.com.br/ad-viewer/Correios/Integrada/macbook.png)!important;
+background-size: 27px!important;
+content: ""!important;
+background-repeat: no-repeat!important;
+background-position-x: 145px!important;
+background-position-y: 90%!important;
+}
+
+.hello{
+background:#000000;
+color:white;
+font-size:20px;
+}
+Meu progresso - 94%
+16 de 17 aulas
+A1
+Denominação de Loja
+A2
+Psicologia das Cores
+A3
+Criação de Logo
+A4
+Google Drive e Organização
+A5
+Plataformas Para Criação de Loja
+A6
+Comprando Dominio
+A7
+Criando Loja Shopify
+A8
+Cadastrando um E-mail Profissional
+A9
+Montando e Configurando toda a Loja (Parte 1)
+A10
+Montando e Configurando toda a Loja (Parte 2)
+A11
+Montando e Configurando toda a Loja (Parte 3)
+A12
+(Bônus) Tema Tiago Digital
+A13
+O que Compõe uma Loja Profissional? (Revise sua Loja)
+A14
+Aplicativos & Tempo de Carregamento
+A15
+Gateway de Pagamento
+A16
+Configurando e Personalizando o Checkout Transparente
+A17
+(Aula Extra) Como Migrar de uma Conta da Shopify para Outra
